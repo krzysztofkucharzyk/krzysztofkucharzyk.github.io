@@ -19,7 +19,6 @@ div:nth-child(3) {
     transition: all .5s linear;
 }
 
-
 div:nth-child(1):hover {
     width: 300px;
 }
