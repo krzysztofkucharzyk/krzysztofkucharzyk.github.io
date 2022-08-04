@@ -1,0 +1,373 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+:root {
+    --clr-bg-grey: #f2f1ed;
+    --clr-bg-blue-hover: rgba(0, 123, 255, 0.8);
+
+    --fc-dark-grey: #333;
+    --fc-light-grey: #777;
+    --fc-blue: #007bff;
+
+    --ff-main-heading: 4.2em;
+    --ff-p-h1: 1.3em;
+    --ff-section-heading: 1.9em;
+    --ff-hover-heading: 3em;
+}
+
+/* Desktop > 992px */
+
+/* Część wspólna */
+
+hr {
+    width: 6%;
+    border: 1px solid var(--fc-blue);
+    border-bottom: 0;
+}
+
+
+.button {
+    color: var(--fc-dark-grey);
+    border: 1px solid var(--fc-blue);
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: transparent;
+    margin: 0 auto;
+}
+
+.button:hover {
+    color: #fff;
+    background-color: var(--fc-blue);
+    transition: all 0.3s;
+}
+
+#o-mnie,
+#portfolio,
+#kontakt {
+    padding: 120px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#o-mnie h2,
+#portfolio h2,
+#kontakt h2 {
+    font-size: var(--ff-section-heading);
+    color: var(--fc-dark-grey);
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.wrapper {
+    text-align: center;
+    width: 1170px;
+}
+
+/* Część wspólna END */
+
+/* Header + nav-bar */
+
+.header-container {
+    height: 70vh;
+    background-image: url('../img/header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-wrapper h1 {
+    font-size: var(--ff-main-heading);
+    color: var(--fc-blue);
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.header-wrapper p {
+    font-size: var(--ff-p-h1);
+    color: var(--fc-dark-grey);
+    padding: 30px 0px;
+}
+
+.header-wrapper p span {
+    color: var(--fc-blue);
+}
+
+#toggle {
+    display: none;
+}
+
+.nav-bar {
+    height: 70px;
+    background-color: var(--fc-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-bar ul {
+    padding: 0;
+    margin: 0;
+}
+
+.nav-bar li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.nav-bar li a,
+#toggle span {
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    display: block;
+    transition: all .3s;
+}
+
+.nav-bar li a:hover {
+    background-color: #fff;
+    color: var(--fc-blue);
+}
+
+/* Header + nav-bar END */
+
+/* O MNIE */
+
+#o-mnie  img {
+    border-radius: 50%;
+    margin-top: 50px;
+}
+
+#o-mnie .p-wrapper {
+    width: 700px;
+    margin: 10px auto;
+    padding: 20px 0px;
+}
+
+#o-mnie .p-wrapper > p{
+    color: var(--fc-light-grey);
+    line-height: 1.4;
+}
+
+/* O MNIE END */
+
+/* PORTFOLIO */
+
+#portfolio {
+    background-color: var(--clr-bg-grey);
+}
+
+#portfolio .img-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+#portfolio .gallery-item {
+    flex-basis: 25%;
+    height: 200px;
+    position: relative;
+}
+
+#portfolio .gallery-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#portfolio .gallery-item .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    background-color: var(--clr-bg-blue-hover);
+    color: #fff;
+    font-size: var(--ff-hover-heading);
+    line-height: 200px;
+    opacity: 0;
+}
+
+#portfolio .gallery-item:hover .overlay{
+    opacity: 1;
+    transition: all 0.3s;
+}
+
+/* PORTFOLIO END */
+
+/* KONTAKT */
+
+#kontakt .form-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 700px;
+    margin: 50px auto 0;
+}
+
+#kontakt .form-wrapper input[type=text],
+#kontakt .form-wrapper input[type=email] {
+    flex-basis: 49%;
+}
+
+#kontakt .form-wrapper textarea {
+    flex-basis: 100%;
+    height: 100px;
+    margin: 15px 0px;
+}
+
+
+#kontakt .form-wrapper input[type=text],
+#kontakt .form-wrapper input[type=email],
+#kontakt .form-wrapper textarea {
+    border: 1px solid var(--fc-light-grey);
+    padding: 10px;
+}
+
+#kontakt .social-wrapper {
+    margin-top: 50px;
+}
+
+#kontakt .social-wrapper .social-item{
+    display: inline-block;
+    font-size: 2.5em;
+    color: var(--fc-blue);
+    margin: 0 20px;
+    transition: all 0.3s;
+}
+
+#kontakt .social-wrapper .social-item:hover{
+    color: var(--fc-light-grey);
+}
+
+
+/* KONTAKT END */
+
+/* FOOTER */
+
+footer {
+    height: 70px;
+    line-height: 70px;
+    background-color: var(--clr-bg-grey);
+    text-align: center;
+    color: var(--fc-dark-grey);
+}
+
+footer p {
+    margin: 0;
+}
+
+/* FOOTER END */
+
+/* RESPONSYWNOŚĆ */
+
+@media (max-width: 1200px) {
+    .wrapper {
+        width: 992px;
+    }
+}
+
+@media (max-width: 992px) {
+    .wrapper {
+        width: 768px;
+    }
+
+    #portfolio .gallery-item {
+        flex-basis: 50%;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        width: 95%;
+    }
+
+    #portfolio .gallery-item {
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-wrapper h1 {
+        font-size: 3em;
+    }
+
+    #toggle {
+        height: 70px;
+        background-color: var(--fc-blue);
+        display: flex;
+        align-items: center ;
+        justify-content: end;
+    }
+
+    #toggle span {
+        margin: 30px;
+    }
+
+    #toggle span:hover {
+        cursor: pointer;
+    }
+
+    #nav-toggle{
+        display: none;
+        width: 100%;
+        height: auto;
+        text-align: right;
+    }
+
+    #nav-toggle ul {
+        width: 100%;
+    }
+
+    #nav-toggle ul li{
+        padding: 15px 30px;
+        margin: 0;
+        width: 100%;
+    }
+
+    #nav-toggle.show{
+        display: flex;
+        justify-content: end;
+    }
+
+    #o-mnie  img {
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    #o-mnie .p-wrapper {
+        width: 100%;
+    }
+
+    #kontakt .form-wrapper {
+        width: 100%;
+        gap: 10px;
+    }
+
+    #kontakt .form-wrapper input[type=text],
+    #kontakt .form-wrapper input[type=email],
+    #kontakt .form-wrapper textarea {
+        flex-basis: 100%;
+        margin: 0;
+    }
+
+
+}

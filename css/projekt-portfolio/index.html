@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header class="header-container">
+        <div class="wrapper header-wrapper">
+            <h1>Front End Developer</h1>
+            <hr>
+            <p>HTML <span>&#8226;</span> CSS <span>&#8226;</span> JavaScript</p>
+            <a href="#" class="button">Dowiedz się więcej</a>
+        </div>
+    </header>
+
+    <div id="toggle" onclick="menuToggle();"><span>MENU</span></div>
+    <nav class="nav-bar" id="nav-toggle">
+        <ul>
+            <li><a href="#o-mnie" class="nav-item">O mnie</a></li>
+            <li><a href="#portfolio" class="nav-item">Portfolio</a></li>
+            <li><a href="#kontakt" class="nav-item">Kontakt</a></li>
+        </ul>
+    </nav>
+    
+    <section id="o-mnie">
+        <div class="wrapper section-wrapper">
+            <h2>O mnie</h2>
+            <hr>
+            <img src="img/about.jpg" alt="O mnie">
+            <div class="p-wrapper">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil ab similique mollitia. Recusandae reiciendis sapiente amet, ducimus perspiciatis mollitia? Perferendis!</p>
+                <p>Consequatur ratione necessitatibus adipisci sed aliquam harum. Hic distinctio labore dolore harum non, odit sequi tempora sunt dicta similique commodi.</p>
+            </div>
+            <a href="#portfolio" class="button">Moje portfolio</a>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="wrapper section-wrapper">
+            <h2>Portfolio</h2>
+            <hr>
+            <div class="img-gallery">
+                <a href="#" class="gallery-item">
+                    <img src="img/portfolio/photo-1.jpg" alt="Laptop">
+                    <h3 class="overlay">Projekt</h3>
+                </a>
+                <a href="#" class="gallery-item">
+                    <img src="img/portfolio/photo-2.jpg" alt="Zarówki">
+                    <h3 class="overlay">Projekt</h3>
+                </a>
+                <a href="#" class="gallery-item">
+                    <img src="img/portfolio/photo-3.jpg" alt="Motor">
+                    <h3 class="overlay">Projekt</h3>
+                </a>
+                <a href="#" class="gallery-item">
+                    <img src="img/portfolio/photo-4.jpg" alt="Borówki">
+                    <h3 class="overlay">Projekt</h3>
+                </a>
+                <a href="#" class="gallery-item">
+                    <img src="img/portfolio/photo-5.jpg" alt="Kredki">
+                    <h3 class="overlay">Projekt</h3>
+                </a>
+                <a href="#" class="gallery-item">
+                    <img src="img/portfolio/photo-6.jpg" alt="Laptop">
+                    <h3 class="overlay">Projekt</h3>
+                </a>
+                <a href="#" class="gallery-item">
+                    <img src="img/portfolio/photo-7.jpg" alt="Dom">
+                    <h3 class="overlay">Projekt</h3>
+                </a>
+                <a href="#" class="gallery-item">
+                    <img src="img/portfolio/photo-8.jpg" alt="Słoiki">
+                    <h3 class="overlay">Projekt</h3>
+                </a>
+                <a href="#" class="gallery-item">
+                    <img src="img/portfolio/photo-9.jpg" alt="Kawa">
+                    <h3 class="overlay">Projekt</h3>
+                </a>
+                <a href="#" class="gallery-item">
+                    <img src="img/portfolio/photo-10.jpg" alt="Ołówki">
+                    <h3 class="overlay">Projekt</h3>
+                </a>
+                <a href="#" class="gallery-item">
+                    <img src="img/portfolio/photo-11.jpg" alt="Farba">
+                    <h3 class="overlay">Projekt</h3>
+                </a>
+                <a href="#" class="gallery-item">
+                    <img src="img/portfolio/photo-12.jpg" alt="Garbus">
+                    <h3 class="overlay">Projekt</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontakt">
+        <div class="wrapper section-wrapper">
+            <h2>Kontakt</h2>
+            <hr>
+            <form class="form-wrapper">
+                <input type="text" name="f_name" id="f_name" placeholder="Imię">
+                <input type="email" name="f_email" id="f_email" placeholder="Email">
+                <textarea name="f_msg" id="f_msg" placeholder="Wiadomość"></textarea>
+                <input type="button" value="Wyślij Wiadomość" class="button">
+            </form>
+            <div class="social-wrapper">
+                <a href="#" class="social-item"><i class="fab fa-facebook-square"></i></a>
+                <a href="#" class="social-item"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-item"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-item"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyright &copy; Akademia 108 - Szkoła Programowania</p>
+    </footer>
+
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
