@@ -263,11 +263,11 @@ hr {
 /* FOOTER */
 
 footer {
-    height: 70px;
-    line-height: 70px;
     background-color: var(--clr-bg-grey);
     text-align: center;
     color: var(--fc-dark-grey);
+    height: auto;
+    padding: 25px 0px;
 }
 
 footer p {
@@ -302,6 +302,10 @@ footer p {
 
     #portfolio .gallery-item {
         flex-basis: 100%;
+    }
+
+    #kontakt .form-wrapper {
+        width: 100%;
     }
 }
 
