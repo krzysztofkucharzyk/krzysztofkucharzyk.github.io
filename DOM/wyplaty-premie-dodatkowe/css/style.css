@@ -1,0 +1,21 @@
+#pracownicy {
+    display: table;
+    width: auto;
+    background-color: #eee;
+    border: 1px solid #666666;
+    border-spacing: 5px;
+    padding: 50px;
+  }
+
+[id^="pracownik"] {
+    display: table-row;
+}
+
+[id^="pracownik"] > span, [id^="pracownik"] > input {
+    display: table-cell;
+  }
+
+.pracownik {
+    display: table-cell;
+}
+
