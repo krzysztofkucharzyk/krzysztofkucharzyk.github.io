@@ -5,6 +5,11 @@ let czas = document.getElementsByClassName('czas');
 let stawka = document.getElementsByClassName('stawka');
 let wyplata = document.getElementsByClassName('wyplata');
 
+let arrNajlepsi = [];
+let najlepsi = parseInt(czas[0].value);
+        arrNajlepsi.push(najlepsi);
+        console.log(arrNajlepsi);
+
 const przeliczWyplaty = () => {
 
     for (let i = 0; i < czas.length; i++) {
@@ -22,10 +27,11 @@ const przeliczWyplaty = () => {
         } else {
             wyplata[i].innerHTML = `${wyplataPremia} PLN (premia: ${premia} PLN)`;
         }
+
+        
+
     }
 }
-
-
 
 
 
