@@ -34,13 +34,15 @@ const najlepsiPracownicy = () => {
     let czasInputValue = new Array();
 
     for (let i = 0; i < czas.length; i++) {
-        czasInputValue[i] = czas[i].value;
+        // czasInputValue[i] = czas[i].value;
+        czasInputValue[i] = czas[i].value + ' ' + pracownik[i].textContent;
     }
 
-    let sortValues = czasInputValue.sort((a,b) => b-a).slice(0,3);
+    let sortValues = czasInputValue.sort((a, b) => (a > b ? -1 : 1));
 
     for (let i = 0; i < czas.length; i++) {
-        pracownicy.innerHTML += `<li>${pracownik[i].textContent}</li>`;
+        // pracownicy.innerHTML += `<li>${pracownik[i].textContent}</li>`;
+        pracownicy.innerHTML += `<li>${czasInputValue[i]}</li>`;
     }
 
     console.log(sortValues);
