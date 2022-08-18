@@ -5,10 +5,6 @@ let czas = document.getElementsByClassName('czas');
 let stawka = document.getElementsByClassName('stawka');
 let wyplata = document.getElementsByClassName('wyplata');
 
-let arrNajlepsi = [];
-let najlepsi = parseInt(czas[0].value);
-        arrNajlepsi.push(najlepsi);
-        console.log(arrNajlepsi);
 
 const przeliczWyplaty = () => {
 
@@ -27,15 +23,32 @@ const przeliczWyplaty = () => {
         } else {
             wyplata[i].innerHTML = `${wyplataPremia} PLN (premia: ${premia} PLN)`;
         }
-
-        
-
     }
 }
 
+const najlepsiPracownicy = () => {
 
+    let pracownicy = document.getElementById('najlepsi-pracownicy');
+    let pracownik = document.getElementsByClassName('pracownik');
 
+    let czasInputValue = new Array();
 
+    for (let i = 0; i < czas.length; i++) {
+        czasInputValue[i] = czas[i].value;
+    }
 
+    let sortValues = czasInputValue.sort((a,b) => b-a).slice(0,3);
+
+    for (let i = 0; i < czas.length; i++) {
+        pracownicy.innerHTML += `<li>${pracownik[i].textContent}</li>`;
+    }
+
+    console.log(sortValues);
+
+}
+
+najlepsiPracownicy();
 
 button.addEventListener('click', przeliczWyplaty);
+
+
