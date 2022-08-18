@@ -16,6 +16,7 @@ const przeliczWyplaty = () => {
 
         if (parseInt(czas[i].value) < 100) {
             pracownik[i].style.backgroundColor = 'red';
+            pracownik[i].style.color = 'white';
         }
 
         if (parseInt(czas[i].value) <= 160) {
@@ -32,7 +33,7 @@ const najlepsiPracownicy = () => {
     let pracownik = document.getElementsByClassName('pracownik');
 
     najPracownicy.innerHTML = '';
-    
+
     let czasInputValue = new Array();
 
     for (let i = 0; i < czas.length; i++) {
