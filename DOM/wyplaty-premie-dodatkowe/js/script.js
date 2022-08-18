@@ -48,6 +48,7 @@ const najlepsiPracownicy = () => {
     }
 
 }
+
 button.addEventListener('click', najlepsiPracownicy)
 button.addEventListener('click', przeliczWyplaty);
 
