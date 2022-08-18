@@ -1,0 +1,25 @@
+#pracownicy {
+    display: table;
+    width: auto;
+    background-color: #eee;
+    border: 1px solid #666666;
+    border-spacing: 5px;
+    padding: 50px;
+  }
+
+[id^="uczen"] {
+    display: table-row;
+}
+
+[id^="uczen"] > span, [id^="uczen"] > input {
+    display: table-cell;
+  }
+
+#title {
+    display: table-cell;
+}
+
+li {
+  margin-left: 30px;
+}
+
