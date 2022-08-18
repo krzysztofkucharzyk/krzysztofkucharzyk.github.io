@@ -28,24 +28,20 @@ const przeliczWyplaty = () => {
 
 const najlepsiPracownicy = () => {
 
-    let pracownicy = document.getElementById('najlepsi-pracownicy');
+    let najPracownicy = document.getElementById('najlepsi-pracownicy');
     let pracownik = document.getElementsByClassName('pracownik');
 
     let czasInputValue = new Array();
 
     for (let i = 0; i < czas.length; i++) {
-        // czasInputValue[i] = czas[i].value;
         czasInputValue[i] = czas[i].value + ' ' + pracownik[i].textContent;
     }
 
-    let sortValues = czasInputValue.sort((a, b) => (a > b ? -1 : 1));
+    czasInputValue.sort((a, b) => (parseInt(a) > parseInt(b) ? -1 : 1));
 
     for (let i = 0; i < czas.length; i++) {
-        // pracownicy.innerHTML += `<li>${pracownik[i].textContent}</li>`;
-        pracownicy.innerHTML += `<li>${czasInputValue[i]}</li>`;
+        najPracownicy.innerHTML += `<li>${czasInputValue[i]}</li>`;
     }
-
-    console.log(sortValues);
 
 }
 
