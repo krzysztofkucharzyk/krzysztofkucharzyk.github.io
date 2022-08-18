@@ -31,6 +31,8 @@ const najlepsiPracownicy = () => {
     let najPracownicy = document.getElementById('najlepsi-pracownicy');
     let pracownik = document.getElementsByClassName('pracownik');
 
+    najPracownicy.innerHTML = '';
+    
     let czasInputValue = new Array();
 
     for (let i = 0; i < czas.length; i++) {
@@ -38,15 +40,14 @@ const najlepsiPracownicy = () => {
     }
 
     czasInputValue.sort((a, b) => (parseInt(a) > parseInt(b) ? -1 : 1));
-
-    for (let i = 0; i < czas.length; i++) {
+      
+    for (let i = 0; i < 3; i++) {
+        
         najPracownicy.innerHTML += `<li>${czasInputValue[i]}</li>`;
     }
 
 }
-
-najlepsiPracownicy();
-
+button.addEventListener('click', najlepsiPracownicy)
 button.addEventListener('click', przeliczWyplaty);
 
 
