@@ -1,5 +1,4 @@
 #pracownicy {
-    display: table;
     width: auto;
     background-color: #eee;
     border: 1px solid #666666;
@@ -15,11 +14,25 @@
     display: table-cell;
   }
 
-#title {
-    display: table-cell;
+
+.tytul {
+  display: inline-block;
+  width: 147px;
+  text-align: center;
+  font-weight: bold;
 }
 
-li {
-  margin-left: 30px;
+button {
+  padding: 15px 40px;
+  font-size: 20px;
+  background-color: #ff8f00;
+  border: 0px;
+  border-radius: 4%;
+  cursor: pointer;
 }
 
+button:hover {
+  background-color: rgb(231, 91, 9);
+  color: #fff;
+  transition: all 0.3s;
+}

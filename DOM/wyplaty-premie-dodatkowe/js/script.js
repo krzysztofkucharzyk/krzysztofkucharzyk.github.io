@@ -43,7 +43,6 @@ const najlepsiPracownicy = () => {
     czasInputValue.sort((a, b) => (parseInt(a) > parseInt(b) ? -1 : 1));
       
     for (let i = 0; i < 3; i++) {
-        
         najPracownicy.innerHTML += `<li>${czasInputValue[i]}</li>`;
     }
 
