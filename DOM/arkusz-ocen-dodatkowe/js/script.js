@@ -1,6 +1,6 @@
 let uczenId = document.querySelectorAll("[id^='uczen']");
-let input = document.querySelectorAll('input[type="number"]');
-let uczen = document.getElementsByClassName('uczen');
+
+
 let mat = document.getElementsByClassName('matematyka');
 let pol = document.getElementsByClassName('polski');
 let bio = document.getElementsByClassName('biologia');
@@ -18,7 +18,7 @@ let divInput = div.querySelectorAll('input[type="number"]');
 let divInputLen = div.querySelectorAll('input[type="number"]').length;
 let divInputValue = div.querySelectorAll('input[type="number"]')[0].value;
 
-const liczenieSredniej = (event) => {
+// const liczenieSredniej = (event) => {
     
     for (i = 0; i < uczenId.length +1; i++) {
 
@@ -26,7 +26,7 @@ const liczenieSredniej = (event) => {
         
         // if (!(dodatkowe[i].value == "") && sredniaOcen < 6) {
         //     let ocenaDodatkowa = sredniaOcen + podwyzszenieOceny;
-        //     sredniaInput[i].innerHTML = ocenaDodatkowa.toFixed(1);
+        //     sredniaInput[i].innerHTML = ocenaDodatkowa.toFixed(2);
             
         // }
 
@@ -73,6 +73,42 @@ const liczenieSredniej = (event) => {
 
     }
 
-}
 
-button.addEventListener('click', liczenieSredniej);
+    // let input = document.querySelectorAll('input[type="number"]');
+    // let uczen = document.getElementsByClassName('uczen');
+    
+    // let inputValue = new Array();
+
+    // for (let i = 0; i < input.length; i++) {
+    //     inputValue[i] = input[i].value;
+         
+    // }
+    
+    
+
+    
+
+    // console.log(inputValue);
+
+
+
+    // for (i = 0; i < input.length; i ++) {
+    //     let uczen = document.getElementsByClassName('uczen');
+       
+    //     let inputValue = input[i].value;
+        
+    //     if (inputValue.includes(1)) {
+    //         uczen[i].style.backgroundColor = 'red';
+    //     }
+
+    //     console.log(inputValue);
+    // }
+
+
+
+
+// console.log(divInput);
+
+// }
+
+// button.addEventListener('click', liczenieSredniej);
