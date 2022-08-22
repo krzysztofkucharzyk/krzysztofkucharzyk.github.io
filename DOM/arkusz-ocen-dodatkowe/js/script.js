@@ -20,20 +20,8 @@ let divInputValue = div.querySelectorAll('input[type="number"]')[0].value;
 
 const liczenieSredniej = (event) => {
     
-    for (i = 0; i < uczenId.length + 1; i++) {
+    for (i = 0; i < uczenId.length +1; i++) {
 
-        let sredniaOcen = [parseFloat(mat[i].value) + parseFloat(pol[i].value) + parseFloat(bio[i].value) + parseFloat(geo[i].value) + parseFloat(fiz[i].value) + parseFloat(che[i].value) + parseFloat(inf[i].value)] / divInputLen;
-
-        sredniaInput[i].innerHTML = sredniaOcen.toFixed(2);
-
-        if (parseFloat(sredniaInput[i].value) < 4,75) {
-            uczen[i].style.backgroundColor = 'red';
-            // pracownik[i].style.color = 'white';
-        }
-
-
-        
-        
         const podwyzszenieOceny = 0.5;
         
         // if (!(dodatkowe[i].value == "") && sredniaOcen < 6) {
@@ -77,6 +65,9 @@ const liczenieSredniej = (event) => {
             inf[i].value = infPodwyzszona.toFixed(1);
         }
 
+        let sredniaOcen = [parseFloat(mat[i].value) + parseFloat(pol[i].value) + parseFloat(bio[i].value) + parseFloat(geo[i].value) + parseFloat(fiz[i].value) + parseFloat(che[i].value) + parseFloat(inf[i].value)] / divInputLen;
+
+        sredniaInput[i].innerHTML = sredniaOcen.toFixed(2);
         
         
 
