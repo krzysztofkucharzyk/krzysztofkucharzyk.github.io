@@ -31,22 +31,13 @@ const wyliczenieSredniej = () => {
         let srednia = uczenId[i].getElementsByClassName('srednia')[0];
         srednia.innerHTML = wynik;
 
-        if (dodatkowe[i].value === 'chemia' && parseFloat(che[i].value) < 6) {
-            let chePodwyzszona = parseFloat(che[i].value) + podwyzszenieOceny;
-            che[i].value = chePodwyzszona.toFixed(1);
+        if (wynik >= 4.75) {
+            uczenName.style.backgroundColor = 'green';
+        } else {
+            uczenName.style.backgroundColor = null;
         }
-
-        if (dodatkowe[i].value === 'informatyka' && parseFloat(inf[i].value) < 6) {
-            let infPodwyzszona = parseFloat(inf[i].value) + podwyzszenieOceny;
-            inf[i].value = infPodwyzszona.toFixed(1);
-        }
-
-        let sredniaOcen = [parseFloat(mat[i].value) + parseFloat(pol[i].value) + parseFloat(bio[i].value) + parseFloat(geo[i].value) + parseFloat(fiz[i].value) + parseFloat(che[i].value) + parseFloat(inf[i].value)] / divInputLen;
-
-        sredniaInput[i].innerHTML = sredniaOcen.toFixed(2);
-        
-        
-
     }
+    
+}
 
 button.addEventListener('click', wyliczenieSredniej);
