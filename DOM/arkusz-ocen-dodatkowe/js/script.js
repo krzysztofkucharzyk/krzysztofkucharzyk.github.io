@@ -10,6 +10,8 @@ const wyliczenieSredniej = () => {
         let przedmiotyIlosc = przedmioty.length;
         let dodatkowe = uczenId[i].getElementsByClassName('zajecia-dodatkowe')[0].value.split(',');
 
+        uczenName.style.backgroundColor = '';
+
         let suma = 0;
 
         for (const przedmiot of przedmioty) {
@@ -28,14 +30,12 @@ const wyliczenieSredniej = () => {
  
         let wynik = (suma / przedmiotyIlosc).toFixed(2);
 
-        let srednia = uczenId[i].getElementsByClassName('srednia')[0];
-        srednia.innerHTML = wynik;
-
         if (wynik >= 4.75) {
             uczenName.style.backgroundColor = 'green';
-        } else {
-            uczenName.style.backgroundColor = null;
-        }
+        } 
+
+        let srednia = uczenId[i].getElementsByClassName('srednia')[0];
+        srednia.innerHTML = wynik;
     }
     
 }
