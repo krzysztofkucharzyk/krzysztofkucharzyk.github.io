@@ -23,7 +23,7 @@ const wyliczenieSredniej = () => {
                 }
             });
 
-            if (parseFloat(przedmiot.value) == 1) {
+            if (przedmiot.value == 1) {
                 uczenName.style.backgroundColor = 'red';
             }
         }
