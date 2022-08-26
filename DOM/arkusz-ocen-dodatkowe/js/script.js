@@ -40,4 +40,5 @@ const wyliczenieSredniej = () => {
     
 }
 
+
 button.addEventListener('click', wyliczenieSredniej);
