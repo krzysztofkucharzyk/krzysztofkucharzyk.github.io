@@ -1,0 +1,27 @@
+#btn {
+    padding: 20px 40px;
+    color: #fff;
+    border: 1px solid #000;
+    background-color: #ff8000;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 50px;
+  }
+
+#btn:hover {
+    background-color: #e06500;
+}
+
+#btnJson {
+    padding: 20px 40px;
+    color: #fff;
+    border: 1px solid #000;
+    background-color: #ff2600;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 50px;
+  }
+
+#btnJson:hover {
+    background-color: #e00000;
+}
