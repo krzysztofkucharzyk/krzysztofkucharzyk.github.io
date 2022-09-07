@@ -25,6 +25,4 @@ const getData = () => {
     })
 }
 
-
-
 btn.addEventListener('click', getData);
