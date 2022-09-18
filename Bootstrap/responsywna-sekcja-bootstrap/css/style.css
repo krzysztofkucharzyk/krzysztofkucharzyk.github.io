@@ -1,0 +1,30 @@
+.content {
+    text-align: center;
+}
+
+.content hr {
+    width: 30%;
+}
+
+.circle {
+    background-color: #f7f7f7;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+i {
+    color: #d38900;
+    font-size: 7rem;
+}
+
+.column {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0px;
+  }
