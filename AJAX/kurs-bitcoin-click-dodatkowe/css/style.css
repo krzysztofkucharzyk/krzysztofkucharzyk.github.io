@@ -11,3 +11,18 @@
 #btn:hover {
     background-color: #e06500;
 }
+
+.fa.fa-arrow-up:after {
+  color: green;
+  content: '\f062';
+}
+
+.fa.fa-arrow-down:after {
+  color: red;
+  content: '\f063';
+}
+
+.fa.fa-minus:after {
+  color: gray;
+  content: '\f068';
+}
